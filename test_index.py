@@ -47,7 +47,7 @@ def test_index_integrity():
         assert validators.url(url), f"Invalid URL: {url}"
         # Base path check
         assert url.startswith(
-            "https://raw.githubusercontent.com/amidaware/reporting-templates/master"
+            "https://raw.githubusercontent.com/nuvemquery/reporting-templates/master"
         ), f"URL does not start with expected base: {url}"
         # Collect names for duplicate detection
         seen_names.append(entry.get("name", ""))
