@@ -9,7 +9,7 @@ def main():
     for file in files:
         # Remove the ".json" extension from the filename
         name_without_extension = file.replace(".json", "")
-        base_url = "https://raw.githubusercontent.com/amidaware/reporting-templates/master/templates/"
+        base_url = "https://raw.githubusercontent.com/nuvemquery/reporting-templates/master/templates/"
         temp = {"name": name_without_extension, "download_url": base_url + parse.quote(file)}
         index.append(temp)
 
